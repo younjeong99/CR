@@ -8,5 +8,6 @@
   <%= @article.content %>
 </p>
 
-
+<%= link_to "modification", edit_article_path(@article) %>
+<%= link_to "delete", article_path(@article), method: :delete %>
 <%= link_to "Articles list", articles_path %>
